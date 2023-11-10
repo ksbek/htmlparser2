@@ -4,10 +4,10 @@
     "version": "9.0.0",
     "author": "Felix Boehm <me@feedic.com>",
     "funding": [
-        "https://github.com/fb55/htmlparser2?sponsor=1",
+        "https://github.com/ksbek/htmlparser2?sponsor=1",
         {
             "type": "github",
-            "url": "https://github.com/sponsors/fb55"
+            "url": "https://github.com/sponsors/ksbek"
         }
     ],
     "license": "MIT",
@@ -24,7 +24,7 @@
     ],
     "repository": {
         "type": "git",
-        "url": "git://github.com/fb55/htmlparser2.git"
+        "url": "git://github.com/ksbek/htmlparser2.git"
     },
     "directories": {
         "lib": "lib/"
@@ -56,7 +56,7 @@
         "format:prettier": "npm run format:prettier:raw -- --write",
         "format:prettier:raw": "prettier '**/*.{ts,md,json,yml}'",
         "build": "npm run build:cjs && npm run build:esm",
-        "build:cjs": "tsc --sourceRoot https://raw.githubusercontent.com/fb55/htmlparser2/$(git rev-parse HEAD)/src/",
+        "build:cjs": "tsc --sourceRoot https://raw.githubusercontent.com/ksbek/htmlparser2/$(git rev-parse HEAD)/src/",
         "build:esm": "npm run build:cjs -- --module esnext --target es2019 --outDir lib/esm && echo '{\"type\":\"module\"}' > lib/esm/package.json",
         "prepare": "npm run build"
     },
