@@ -90,7 +90,8 @@ export {
  * All of the following exports exist for backwards-compatibility.
  * They should probably be removed eventually.
  */
-export * as ElementType from "domelementtype";
+import * as ElementType from "domelementtype";
+export {ElementType}
 
 import { getFeed, type Feed } from "domutils";
 
@@ -111,4 +112,5 @@ export function parseFeed(
     return getFeed(parseDOM(feed, options));
 }
 
-export * as DomUtils from "domutils";
+import * as DomUtils from "domutils";
+export {DomUtils}
